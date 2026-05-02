@@ -10,7 +10,6 @@ SMTP_CONFIG = {
     "email": os.getenv("SMTP_EMAIL"),
     "password": os.getenv("SMTP_PASSWORD")
 }
-GROQ_API_KEY = "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"
 
 LOG_FOLDER_PATH = "data"
 
