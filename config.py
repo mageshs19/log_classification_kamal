@@ -1,5 +1,15 @@
 # app/config.py
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+
+SMTP_CONFIG = {
+    "server": os.getenv("SMTP_SERVER"),
+    "port": int(os.getenv("SMTP_PORT")),
+    "email": os.getenv("SMTP_EMAIL"),
+    "password": os.getenv("SMTP_PASSWORD")
+}
 GROQ_API_KEY = "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"
 
 LOG_FOLDER_PATH = "data"
@@ -12,9 +22,3 @@ EMAIL_MAP = {
     "OTHER": "kamalakannan1011@gmail.com"
 }
 
-SMTP_CONFIG = {
-    "server": "smtp.gmail.com",
-    "port": 587,
-    "email": "mageshsecondchance@gmail.com",
-    "password": "drsl dkqn acpz ajki"
-}
