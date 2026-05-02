@@ -1,0 +1,48 @@
+2026-04-19 09:15:23 INFO  cluster.ClusterManager: Cluster i-0abc123 started successfully with 4 workers.
+
+2026-04-19 09:16:02 WARN  spark.Executor: Memory usage is high (85%) on executor 3.
+
+2026-04-19 09:16:45 ERROR job.JobRunner: Failed to execute job_id=789 due to NullPointerException.
+
+2026-04-19 09:17:10 INFO  Table data camep_contact_history is not ready. Retry source check attempt.
+2026-04-19 09:17:45 ERROR temp.StorageHandler: Temp file /tmp/data_456.csv not found.
+
+2026-04-19 09:18:12 WARN  dbfs.FileSystem: Slow read detected on /mnt/raw/sales_data.
+
+2026-04-19 09:18:50 INFO  sql.QueryExecution: Query executed successfully in 2.3s.
+
+2026-04-19 09:19:30 ERROR temp.Transform: Temperature column missing in dataset batch_id=1023.
+
+2026-04-19 09:20:05 INFO  cluster.AutoScaler: Scaling cluster from 4 to 6 nodes.
+
+2026-04-19 09:20:44 ERROR job.JobRunner: TimeoutException while processing job_id=790.
+
+2026-04-19 09:21:15 WARN  spark.Shuffle: Shuffle spill to disk occurred.
+
+2026-04-19 09:21:50 ERROR dbfs.FileSystem: Permission denied for path /mnt/secure/data.
+
+2026-04-19 09:22:30 INFO  ml.ModelTrainer: Model training completed with accuracy=0.89.
+
+2026-04-19 09:23:05 ERROR temp.SensorData: Invalid temperature value detected: -999.
+
+2026-04-19 09:23:45 WARN  sql.QueryExecution: Query took longer than expected (15s).
+
+2026-04-19 09:24:10 INFO  job.JobScheduler: Scheduled job_id=791 triggered.
+
+2026-04-19 09:24:55 ERROR spark.Executor: OutOfMemoryError on executor 2.
+
+2026-04-19 09:25:20 INFO  dbfs.FileUpload: File uploaded to /mnt/processed/output.parquet.
+
+2026-04-19 09:25:50 ERROR temp.StorageHandler: Temp directory cleanup failed.
+
+2026-04-19 09:26:30 WARN  cluster.HealthMonitor: Node i-0xyz456 is unresponsive.
+
+2026-04-19 09:27:05 INFO  sql.QueryExecution: Insert operation completed.
+
+2026-04-19 09:27:40 ERROR job.JobRunner: Job_id=792 failed due to schema mismatch.
+
+2026-04-19 09:28:15 WARN  ml.FeatureStore: Feature drift detected.
+
+2026-04-19 09:28:50 ERROR temp.Transform: Temperature conversion failed for record_id=5678.
+
+2026-04-19 09:29:30 INFO  cluster.ClusterManager: Cluster terminated successfully.

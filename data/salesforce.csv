@@ -1,0 +1,4 @@
+etl_job_id = tdcsmkt01_salesforce_ch_feedback
+2026-04-19 09:17:10 INFO  Table data camep_contact_history is not ready. Retry source check attempt.
+2026-04-19 09:18:50 INFO  sql.QueryExecution: Query executed successfully in 2.3s.
+2026-04-19 09:19:30 ERROR temp.Transform: Temperature column missing in dataset batch_id=1023.

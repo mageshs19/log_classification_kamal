@@ -1,0 +1,50 @@
+RE: Rahona Cloud | ECZMKT01 - eczmkt01_ch_expndd_daily_final | INC10267961 (Internal)
+
+File "/dbfs/databricks/aaecz/prod/w000aaecz/etl-framework-adb/2.7.130/etl_libraries/utils/utilsTrans.py", line 326, in exec_synapse_load
+    data = sql_stmt.executeQuery(sql_query)
+
+File "/databricks/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1355, in __call__
+    return_value = get_return_value(
+
+File "/databricks/spark/python/pyspark/errors/exceptions/captured.py", line 188, in deco
+    return f(*a, **kw)
+
+File "/databricks/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/protocol.py", line 326, in get_return_value
+    raise Py4JJavaError(
+
+py4j.protocol.Py4JJavaError: An error occurred while calling o2903.executeQuery:
+: com.microsoft.sqlserver.jdbc.SQLServerException: 110802;
+An internal DMS error occurred that caused this operation to fail.
+
+Details:
+Please use this Error ID when contacting your Administrator for assistance.
+Error ID: (2a1ebfe75c9e4e0a94dff55234be44a6)
+
+SqlNativeBufferBufferBulkCopy.WriteTdsDataToServer, error in OdbcWriteTdsBuffer:
+SqlState: 42000, NativeError: 1105
+
+"Error calling: bcp_batch(pConn->GetHdbc())"
+
+SQL Error Info:
+SvrMsgState: 2, SvrSeverity: 17, Error:
+
+[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]
+Could not allocate space for object 'temporary system object: 7998414705925881856'
+in database 'tempdb' because the 'PRIMARY' filegroup is full
+due to lack of storage space or database files reaching maximum size.
+
+[Error calling: pBcpConn->WriteTdsBuffer(pBuffer, bufferOffset, bufferLength, numOfRows)]
+
+state: FFFF
+number: 107324
+active connections: 1
+
+Connection String:
+Driver={odbc driver 17};
+app=TypeD00;
+DmsNativeWriter=DB0000wmpdwsco (16468);
+ODBC;
+autotranslate=no;
+trusted_connection=yes;
+server=\\.pipe\\_DB_32-afedb4420ccd--21\\sql\\query;
+database=Distribution_41
